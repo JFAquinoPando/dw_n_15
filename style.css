@@ -1,0 +1,88 @@
+body{
+    background-color: red;
+    color: white;
+    font-size: 14px;
+}
+
+.fila {
+	float: left;
+}
+
+.columna {
+    float: left;
+}
+
+
+
+/* Colores de las columnas */
+.c1{
+    background-color: black;
+}
+.c2{
+    background-color: green;
+}
+.c3{
+    background-color: brown;
+}
+.c4{
+    background-color: gray;
+}
+.c5{
+    background-color: darkblue;
+}
+.c6{
+    background-color: darkslategrey;
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: blue;
+        font-size: 18px;
+        font-style: oblique;
+    }
+
+    .col-mobile-50{
+        width: 50%;
+    }
+}
+
+@media screen 
+and (min-width: 769px) 
+and (max-width:1299px){    
+    .col-desktop-25 {
+        width: 25%;
+    }
+
+    .c2, .c3{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1300px){    
+    .col-4k-16 {
+        width: 16.6%;
+        background-color: black !important;
+    }
+    .c1,.c6 {
+        animation-name: hola;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+
+@keyframes hola {
+    0%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+
